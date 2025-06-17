@@ -10,11 +10,11 @@ router.post("/", (req, res) =>{
     res.status(201).json({message:"Note created successfully!"});
 });
 
-router.put("/", (req,res)=>{
+router.put("/:id", (req,res)=>{
     res.status(200).json({message: "Note updated successfully!"});
 });
 
-router.delete("/", (req, res)=>{
+router.delete("/ :id", (req, res)=>{
     res.status(200).json({message:"Note deleted successfully!"});
 });
 
